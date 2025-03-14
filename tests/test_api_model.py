@@ -19,9 +19,9 @@ def test_create_value_field(has_timestamp: bool) -> None:
     """Test deserialization of VolvoCarsValueField."""
 
     data = (
-        load_json_object_fixture("engine_status")
+        load_json_object_fixture("engine_status.json")
         if has_timestamp
-        else load_json_object_fixture("engine_status_no_timestamp")
+        else load_json_object_fixture("engine_status_no_timestamp.json")
     )
 
     field = VolvoCarsValueField.from_dict(data["engineStatus"])  # type: ignore[arg-type]
@@ -40,9 +40,9 @@ def test_create_location(has_timestamp: bool) -> None:
     """Test deserialization of VolvoCarsLocation."""
 
     data = (
-        load_json_object_fixture("location")
+        load_json_object_fixture("location.json")
         if has_timestamp
-        else load_json_object_fixture("location_no_timestamp")
+        else load_json_object_fixture("location_no_timestamp.json")
     )
 
     location = VolvoCarsLocation.from_dict(data)

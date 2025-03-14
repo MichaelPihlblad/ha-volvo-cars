@@ -15,7 +15,7 @@ async def test_has_images(
     mock_config_entry: MockConfigEntry,
     mock_image_client: None,
 ) -> None:
-    """Test vehicle with images."""
+    """Test vehicle without images."""
 
     with patch("custom_components.volvo_cars.PLATFORMS", [Platform.IMAGE]):
         assert await hass.config_entries.async_setup(mock_config_entry.entry_id)

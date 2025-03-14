@@ -110,14 +110,14 @@ async def async_setup_entry(
     """Set up button."""
     coordinator = entry.runtime_data.coordinator
 
-    buttons = [
+    locks = [
         VolvoCarsButton(coordinator, description)
         for description in BUTTONS
         if description.non_api_command
         or description.required_command_key in coordinator.commands
     ]
 
-    async_add_entities(buttons)
+    async_add_entities(locks)
 
 
 # pylint: disable=abstract-method
