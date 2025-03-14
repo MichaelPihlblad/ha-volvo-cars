@@ -99,12 +99,13 @@ Most entities have these attributes:
 
 #### Additional entities
 
-| Entity               | Type   | Description                                                                                                                                 |
-| -------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| API status           | Sensor | Gives an indication if the Volvo API is online.                                                                                             |
-| API request counter  | Sensor | Shows the number of requests made by this integration.                                                                                      |
-| Data update interval | Number | Set the data update interval. Default is 135 seconds. Volvo gives you 10.000 requests a day (per API key), so you may want to do some math! |
-| Update data          | Button | Force a data refresh.                                                                                                                       |
+| Entity               | Type   | Description                                            |
+| -------------------- | ------ | ------------------------------------------------------ |
+| API status           | Sensor | Gives an indication if the Volvo API is online.        |
+| API request counter  | Sensor | Shows the number of requests made by this integration. |
+| Data update interval | Number | Set the data update interval. Default is 135 seconds.  |
+| Update data          | Button | Force a data refresh.                                  |
+| Engine run time      | Number | Choose for how long you want to start the engine.      |
 
 ## 🤖 Actions
 
