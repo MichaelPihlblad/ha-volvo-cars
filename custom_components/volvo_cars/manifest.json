@@ -1,8 +1,8 @@
 {
-  "domain": "volvo_cars",
-  "name": "Volvo Cars",
+  "domain": "volvo_cars2",
+  "name": "Volvo Cars 2",
   "codeowners": [
-    "@thomasddn"
+    "@MichaelPihlblad"
   ],
   "config_flow": true,
   "documentation": "https://github.com/thomasddn/ha-volvo-cars",
